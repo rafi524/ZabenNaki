@@ -1,2 +1,2 @@
 # ZabenNaki
-CSE-206 DB project (Oracle)
+CSE-216 DB project (Oracle)
