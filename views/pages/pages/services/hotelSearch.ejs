@@ -1,0 +1,80 @@
+<%-include('../../partials/head.ejs')%>
+<div class="bg-image " style="background-image: url('1.jpg');
+height: 100vh">>
+    <div class="col-lg-5 mx-auto shadow px-5 card card-body'">
+       
+        <form class="row g-3" action="/views/pages/home.ejs" method="POST">
+                <!-- iCon by oNlineWebFonts.Com -->
+                <div class="form-check col-lg-4">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Bus
+                    </label>
+                  </div>
+                  <div class="form-check col-lg-4">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Train
+                    </label>
+                  </div>
+                  <div class="form-check col-lg-4">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+                    <label class="form-check-label" for="exampleRadios3">
+                      Plane
+                    </label>
+                  </div>
+            <div class="col-md-6">
+                <label for="inputCountry" class="form-label">From</label>
+                <input type="text" class="form-control" name="country" id="inputCountry">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">To</label>
+                <input type="text" class="form-control" name="city" id="inputCity">
+            </div>
+            <div class="col-lg-6"> Journey date
+            <input type="date" class="form-control">
+            <div class="input-group-addon">
+                <span class="glyphicon glyphicon-th"></span>
+            </div>
+        </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary" value="Submit">Search</button>
+            </div>
+        </form>
+    </div>
+ 
+    </div>
+ </div>
+   
+    <%-include('../../partials/footer.ejs')%>
+  </body>
+ 
+</html>
+
+
+
+
+
+
+
+<div class="col-md-12">
+                <label for="inputCountry" class="form-label">CITY/HOTEL/RESORT/AREA</label>
+                <input type="text" class="form-control" name="country" id="inputCountry">
+            </div>
+           
+            <div class="col-lg-6"> CHECK IN
+            <input type="date" class="form-control">
+            <div class="input-group-addon">
+                <span class="glyphicon glyphicon-th"></span>
+            </div>
+           
+        </div>
+ 
+        <div class="col-lg-6"> CHECK OUT
+            <input type="date" class="form-control">
+            <div class="input-group-addon">
+                <span class="glyphicon glyphicon-th"></span>
+            </div>
+           
+        </div>
+
