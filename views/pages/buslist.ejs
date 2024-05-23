@@ -1,0 +1,53 @@
+<%-include('../partials/head.ejs')%>
+<div class="card">
+    <h5 class="card-header bg-light">Buses Available</h5>
+    <div class="card-body p-3">
+        <% for(let i=0;i<buses.length;i++) { %>
+            <div class="col mx-10 p-3  shadow text-success">
+                <div class="row"> 
+                <div class="h2 col-lg-3"><%=buses[i].cname%></div>
+                <div class="h4 col-lg-3">Dep.Time</div>
+                <div class="h4 col-lg-3">Arr.Time</div>
+                <div class="h2 col-lg-3">Fare :<%=buses[i].fare%></div>
+            </div>
+           <div class="row">
+            <div class="h4 col-lg-3"><%=buses[i].name%></div>
+                <div class="h6 col-lg-3"><%=buses[i].depTime%></div>
+                <div class="h6 col-lg-3"><%=buses[i].arrTime%></div>
+      
+                </div>  
+                
+                <div class="row">
+                  <div class="h6 col-lg-12">starting point : <%=buses[i].from%></div> 
+                  <div class="h6">Ending point : <%=buses[i].to%></div>
+                </div> 
+                <div class="row">
+                    <div class="p col-lg-10"></div>
+                    <div class="button col-lg-2">
+                        <button type="button" class="btn btn-outline-info justify-content-center">View Seats</button>
+                    </div>
+                </div>
+            </div>
+               
+            <div class="row bg-light">
+                <hr>
+            </div>
+        
+        
+        <% }
+        
+        %>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+<%-include('../partials/footer.ejs')%>
+  </body>
+
+</html>
+
+
+
+
+
+
+

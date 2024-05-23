@@ -1,0 +1,30 @@
+<%-include('../partials/head.ejs')%>
+<div class="bg-image " style="background-image: url('https://www.thedhakatravels.com/data1/images/4.jpg');
+height: 100vh">>
+    <div class="col-lg-5 mx-auto shadow px-5 card card-body'">
+        
+        <form class="row g-3" action="/views/pages/home.ejs" method="POST">
+                <!-- iCon by oNlineWebFonts.Com --> 
+        <img src="data:image/svg+xml;base64,CjxpbWcgc3R5bGU9IndpZHRoOiAxMDAlOyBoZWlnaHQ6IGF1dG87IGZsb2F0OiBsZWZ0O2JhY2tncm91bmQtaW1hZ2U6IG5vbmU7IiBzcmM9Ii8vcGljLm9ubGluZXdlYmZvbnRzLmNvbS9zdmcvaW1nXzEwNDQ1LnBuZyIgYWx0PSJCdXMiIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj4KICA=" width="32" height="32">
+            <div class="col-md-6">
+                <label for="from1" class="form-label">From</label>
+                <input type="text" class="form-control" name="from" id="from1">
+            </div>
+            <div class="col-md-6">
+                <label for="to1" class="form-label">To</label>
+                <input type="text" class="form-control" name="to" id="to1">
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary" value="Submit">Search</button>
+            </div>
+        </form>
+    </div>
+
+    </div>
+ </div>
+   
+    <%-include('../partials/footer.ejs')%>
+  </body>
+
+</html>

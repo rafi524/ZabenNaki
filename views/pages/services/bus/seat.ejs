@@ -1,0 +1,73 @@
+<%-include('../../../partials/head.ejs')%>
+<div class="col mt-3 "></div>
+
+<div class="col-lg mt-10 mx-15">
+   
+    <div class="col-lg-3 mx-auto shadow px-10 card card-body mt-7">
+     
+      <h2 class="h2"></h2>
+      <form class="row g-3 mt-5 p-7 " action="/result/bus/seat/101" method="GET">
+        <% let len=seats.length;
+        for(let i=0;i<len;i++) { %>
+            <div class="row">
+                <div class="checkbox col-2 ">
+
+                    <input type="checkbox" name="<%=seats[i].Seat_ID%>">
+                    <span class="checkbox-icon-wrapper bg-dark ">
+                      <span class="checkbox-icon glyphicon glyphicon-ok"></span>
+                    </span>
+                    
+                </div>
+                <%i++%>
+                <div class="checkbox col-2 ">
+
+                    <input type="checkbox" name="<%=seats[i].Seat_ID%>">
+                    <span class="checkbox-icon-wrapper bg-dark ">
+                      <span class="checkbox-icon glyphicon glyphicon-ok"></span>
+                    </span>
+                    
+                </div>
+                <%i++%>
+                <div class="col-lg-4"></div>
+                <div class="checkbox col-2 ">
+
+                    <input type="checkbox" name="<%=seats[i].Seat_ID%>">
+                    <span class="checkbox-icon-wrapper bg-dark ">
+                      <span class="checkbox-icon glyphicon glyphicon-ok"></span>
+                    </span>
+                    
+                </div>
+                
+                <%i++%>
+                <div class="checkbox col-2 ">
+
+                    <input type="checkbox" name="<%=seats[i].Seat_ID%>">
+                    <span class="checkbox-icon-wrapper bg-dark ">
+                      <span class="checkbox-icon glyphicon glyphicon-ok"></span>
+                    </span>
+                    
+                </div>
+            </div>
+
+        
+        
+        <% }
+        
+        %>
+        
+        <div class="col-lg-4">
+            <button type="submit" class="btn btn-primary" value="Submit" >Book Now</button>
+          </div>
+      </form>
+    </div>
+    
+    
+        
+    </div>
+  </div>
+
+  
+ 
+<%-include('../../../partials/footer.ejs')%>
+</body>
+</html>
