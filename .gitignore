@@ -6,3 +6,15 @@ node_modules/
 
 # Ignore temporary files
 *.tmp
+
+# Ignore environment variables
+.env
+
+# Ignore build directories
+dist/
+build/
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.swp
